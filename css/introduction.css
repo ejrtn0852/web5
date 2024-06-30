@@ -1,0 +1,78 @@
+.about--me--wrap {
+  transition: width 0.5s ease-in-out;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.introduction--section {
+  width: 100%;
+  height: 30%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  min-width: 2400px;
+  max-width: 2400px;
+}
+
+.introduction--wrap {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 220px;
+  font-family: "Black Han Sans", sans-serif;
+  font-weight: normal;
+}
+
+.introduction--title {
+  white-space: nowrap;
+  font-size: 8rem;
+  display: inline-block;
+  border-right: 3px solid black;
+  animation: blink .5s infinite, typing 2s steps(31,end) forwards;
+  width: 0;
+  overflow: hidden;
+}
+
+.introduction--description {
+  font-size: 4rem;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid black;
+  width: 0;
+  animation: blink .5s infinite, subtyping 2s steps(24) forwards;
+}
+
+
+
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+@keyframes typing {
+  0%{
+    width: 0;
+  }
+  100% {
+    width: 1450px;
+  }
+}
+
+@keyframes subtyping {
+  0%{
+    width: 0;
+  }
+  100% {
+    width: 670px;
+  }
+}
+
+
+
+

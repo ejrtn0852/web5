@@ -1,0 +1,31 @@
+/* todo portfolio */
+
+.portfolio--header {
+  width: 15%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  flex: 0 0 10%;
+  max-width: 300px;
+  z-index: 1;
+}
+
+.header--wrap {
+  transition: background-color 1s ease-in-out;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  background-color: #202020;
+}
+
+.header--wrap a {
+  font-family: 'GmarketSans', sans-serif;
+  color: white;
+  font-size: 3rem;
+  text-transform: uppercase;
+}

@@ -1,0 +1,80 @@
+.skill--gauge--container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.skill--gauge--container .progress {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  color: #222;
+  background: #444 linear-gradient(to right, transparent 50%, var(--clr) 0);
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+  z-index: 1;
+}
+
+.skill--gauge--container .progress h3 {
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2.5em;
+  z-index: 1;
+  font-weight: 500;
+  text-align: center;
+  line-height: 100px;
+}
+
+.skill--gauge--container .progress h3 span {
+  font-size: 0.65em;
+  font-weight: 400;
+}
+
+.skill--gauge--container .progress h4 {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+  font-weight: 500;
+  color: var(--clr);
+  text-transform: uppercase;
+}
+
+.skill--gauge--container .progress::before {
+  content: '';
+  display: block;
+  height: 100%;
+  margin-left: 50%;
+  transform-origin: left;
+  border-radius: 0 100% 100% 0/50%;
+}
+
+.skill--gauge--container .progress::after {
+  content: '';
+  position: absolute;
+  inset: 10px;
+  border-radius: 50%;
+  background: #fff;
+}
+
+.skill--gauge--container .progress::before {
+  background: var(--clr);
+  transform: rotate(calc(((var(--i) - 50) * 0.01turn)));
+}
+
+.skill--gauge--container .progress.less::before {
+  background: var(--clr);
+  transform: rotate(calc(((var(--i) - 0) * 0.01turn)));
+}
+
+.skill--background {
+
+}

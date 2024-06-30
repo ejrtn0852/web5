@@ -1,0 +1,29 @@
+
+.translate--xp--200per {
+  transform: translateX(200%);
+}
+.translate--xm--200per {
+  transform: translateX(-200%);
+}
+
+.translate--x--0per {
+  transform: translateX(0%);
+}
+
+.mobile {}
+.pc {}
+.all {}
+
+.opacity--one {
+  opacity: 1;
+}
+.opacity--zero {
+  opacity: 0;
+}
+.background--white {
+  background-color: white;
+}
+
+.color--black {
+  color: black;
+}

@@ -1,0 +1,225 @@
+.profile--container {
+  width: 100%;
+  height: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 2400px;
+  max-width: 2400px;
+}
+
+.profile--wrap {
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  max-width: 2400px;
+  min-width: 2400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 100px;
+  font-family: "Black Han Sans", sans-serif;
+  font-weight: 200;
+  position: relative;
+}
+
+.profile--items {
+  min-width: 300px;
+}
+.profile--items:nth-child(2) {
+  margin-top: 400px;
+  font-size: 4rem;
+  transform: translateX(-1500px);
+  transition: transform 1s ease-in-out;
+}
+
+.profile--items:last-child {
+  margin-top:300px;
+  background-color: black;
+  display: flex;
+  min-width: 750px;
+  max-width: 750px;
+  transform: translateX(1500px);
+  width: 800px;
+  height: 400px;
+  transition: transform 1s ease-in-out;
+}
+
+.profile--career {
+  font-size: 4rem;
+  position: relative;
+  min-width: 300px;
+}
+
+.profile--career::after {
+  position: absolute;
+  left: 1%;
+  bottom: 49%;
+  display: inline-block;
+  content: '';
+  max-width: 200px;
+  min-width: 200px;
+  border-bottom: 10px solid rgba(0,0,0,0.5);
+  margin-bottom: 1px;
+  margin-left: 40px;
+}
+
+
+
+.profile--profile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.profile--text--wrap {
+  padding: 0;
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+.profile--img--wrap {
+  width: 400px;
+  height: 350px;
+  background-image: url("../img/KakaoTalk_Photo_2024-06-30-07-51-12.jpeg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+.profile--text--wrap li span {
+  font-size: 2rem;
+}
+.profile--text--wrap li span:first-child {
+  text-transform: uppercase;
+}
+
+/*.profile--aside {*/
+/*  width: 100%;*/
+/*  height: 40%;*/
+/*  display: flex;*/
+/*  flex-direction: column;*/
+/*  justify-content: space-around;*/
+/*}*/
+
+/*.profile--wrap {*/
+/*  width: 100%;*/
+/*  height: 100%;*/
+/*  display: flex;*/
+/*  justify-content: center;*/
+/*  align-items: center;*/
+/*  padding: 30px;*/
+/*}*/
+
+/*.profile--container {*/
+/*  width: 50%;*/
+/*  display: flex;*/
+/*  overflow-x: hidden;*/
+/*}*/
+
+/*.profile--text--wrap {*/
+/*  width: 100%;*/
+/*  min-width: 350px;*/
+/*  display: flex;*/
+/*  flex-direction: column;*/
+/*  gap: 30px;*/
+/*  align-items: flex-end;*/
+/*  justify-content: center;*/
+/*  transform: translateX(-1000px);*/
+/*  transition: transform 1.5s ease-in-out;*/
+/*}*/
+
+/*.profile--text--wrap span {*/
+/*  font-size: 1.5rem;*/
+/*  background-color: var(--main--color);*/
+/*  padding: 10px;*/
+/*  border-radius: 15px;*/
+/*  color: white;*/
+/*  font-family: 'Google Sans', sans-serif;*/
+/*}*/
+
+/*.profile--img--wrap {*/
+/*  padding: 0;*/
+/*  width: 60%;*/
+/*  height: 100%;*/
+/*  overflow-x: hidden;*/
+/*  text-align: center;*/
+/*  transition: transform 1.5s ease-in-out;*/
+/*  transform: translateX(1000px);*/
+/*  display: flex;*/
+/*  align-items: center;*/
+/*}*/
+
+/*.profile--img--wrap img {*/
+/*  width: 100%;*/
+/*  height: 100%;*/
+/*  min-width: 250px;*/
+/*  max-height: 500px;*/
+/*  object-fit: contain;*/
+/*  display: block;*/
+/*}*/
+
+/*.profile--career--container {*/
+/*  min-width: 700px;*/
+/*  max-width: 1000px;*/
+/*  width: 50%;*/
+/*  height: 100%;*/
+/*}*/
+
+
+/*.profile--career {*/
+/*  width: 100%;*/
+/*  height: 0;*/
+/*  background-color: var(--main--color);;*/
+/*  border-radius: 15px;*/
+/*  animation: heightAnimation 2s ease-in-out forwards;*/
+/*}*/
+/*.profile--career--education--list,*/
+/*.profile--career--list {*/
+/*  padding: 50px;*/
+/*  font-size: 2.5rem;*/
+/*  font-family: 'Google Sans', sans-serif;*/
+/*}*/
+
+/*.profile--education--title:nth-of-type(4) {*/
+/*  margin-top: 50px;*/
+/*}*/
+
+
+/*.profile--education--title {*/
+/*  font-weight: bolder;*/
+/*  transition: opacity 1s ease;*/
+/*  border-bottom: 10px solid white;*/
+/*  line-height: 0;*/
+/*  width: 10%;*/
+/*  opacity: 0;*/
+/*}*/
+
+/*.profile--education--list {*/
+/*  transition: opacity 1s ease;*/
+/*  opacity: 0;*/
+/*  display: flex;*/
+/*  justify-content: space-between;*/
+/*  border-bottom:  1px solid white;*/
+/*  padding: 5px;*/
+/*}*/
+
+/*.profile--education--school span:last-child {*/
+/*  color: white;*/
+/*  font-size: 1.7rem;*/
+/*  opacity: .5;*/
+/*}*/
+
+/*.opacity--1 {*/
+/*  opacity: 1;*/
+/*}*/
+
+
+
+/*@keyframes heightAnimation {*/
+/*  0% {*/
+/*    height: 0;*/
+/*  }*/
+/*  100% {*/
+/*    height: 100%;*/
+/*  }*/
+/*}*/
+
